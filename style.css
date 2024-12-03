@@ -14,7 +14,7 @@ body {
   max-width: 1440px;
   margin: auto;
   height: 3840px;
-  background-color: lightblue;
+  background-color: #f1f1f1;
 }
 
 /* Pré Header Section */
@@ -84,4 +84,38 @@ nav {
 nav a {
   font-weight: 400;
   font-size: 16px;
+}
+
+
+
+/* Relative & Absolute */
+.relative {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 64px;
+}
+
+aside {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 24px 32px;
+  position: relative
+}
+
+aside p {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+aside img:first-of-type {
+  position: absolute;
+  top: -14.5px;
+  left: 11px;
+}
+
+aside img:last-of-type {
+  position: absolute;
+  bottom: -14.5px;
+  right: 11px;
 }
