@@ -22,7 +22,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 64px;
+  padding: 32px;
   border-bottom: 1px solid black;
 }
 
@@ -31,15 +31,21 @@ body {
   gap: 12px;
 }
 
+.preHeader a {
+  text-decoration: underline;
+}
+
 /* Header Section */
 header {
   height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 64px;
+  padding: 0px 32px;
   position: sticky;
   top: 0;
+  z-index: 1;
+  background-color: #f1f1f1
 }
 
 header div:nth-child(1) {
@@ -86,36 +92,61 @@ nav a {
   font-size: 16px;
 }
 
-
-
-/* Relative & Absolute */
-.relative {
+/* Hero */
+.content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 32px 64px;
+  padding: 32px;
 }
 
-aside {
-  border: 1px solid black;
-  width: fit-content;
-  padding: 24px 32px;
-  position: relative
+.content h2 {
+  font-size: 56px;
+  width: 480px;
+  height: 134px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  line-height: 1.2;
 }
 
-aside p {
+.contentText {
+  font-size: 18px;
   font-weight: 500;
-  font-size: 24px;
+  width: 480px;
+  height: 54px;
 }
 
-aside img:first-of-type {
-  position: absolute;
-  top: -14.5px;
-  left: 11px;
+.content form {
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-aside img:last-of-type {
-  position: absolute;
-  bottom: -14.5px;
-  right: 11px;
+.content form :first-child {
+  text-indent: 16px;
+  width: 357px;
+  height: 48px;
+  border: 1px solid black;
+  color: gray;
+}
+
+.content form :last-child {
+  margin-left: 16px;
+  width: 140px;
+  height: 48px;
+  background-color: black;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.termsConditions {
+  font-size: 12px;
+  width: 513px;
+  height: 18px;
+  font-weight: 500;
+}
+
+.termsConditions a {
+  text-decoration: underline;
+  color: black;
 }

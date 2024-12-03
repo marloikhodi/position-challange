@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    font-family: "Roboto", serif;
+    color: black;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+    height: 3840px;
+    background-color: #f1f1f1;
+}
+
+/* Relative & Absolute */
+.relative {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 64px;
+}
+
+aside {
+    border: 1px solid black;
+    width: fit-content;
+    padding: 24px 32px;
+    position: relative
+}
+
+aside p {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+aside img:first-of-type {
+    position: absolute;
+    top: -14.5px;
+    left: 11px;
+}
+
+aside img:last-of-type {
+    position: absolute;
+    bottom: -14.5px;
+    right: 11px;
+}
+
+/* Hero */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+
+.content h2 {
+    font-size: 56px;
+    width: 480px;
+    height: 134px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.contentText {
+    font-size: 18px;
+    font-weight: 500;
+    width: 480px;
+    height: 54px;
+}
+
+.content form {
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content form :first-child {
+    text-indent: 16px;
+    width: 357px;
+    height: 48px;
+    border: 1px solid black;
+    color: gray;
+}
+
+.content form :last-child {
+    margin-left: 16px;
+    width: 140px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.termsConditions {
+    font-size: 12px;
+    width: 513px;
+    height: 18px;
+    font-weight: 500;
+}
+
+.termsConditions a {
+    text-decoration: underline;
+    color: black;
+}
