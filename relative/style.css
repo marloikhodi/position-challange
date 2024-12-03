@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    font-family: "Roboto", serif;
+    color: black;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+    height: 3840px;
+    background-color: #f1f1f1;
+}
+
+/* Fixed Section */
+.fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Header Section */
+header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 48px;
+    top: 0;
+    background-color: #f1f1f1
+}
+
+header div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+header div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header div:nth-child(2) button {
+    padding: 8px 20px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header div:nth-child(2) button:nth-child(1) {
+    border: 1px solid black;
+}
+
+header div:nth-child(2) button:nth-child(2) {
+    background-color: black;
+    color: white;
+}
+
+header div img {
+    width: 70px;
+    height: 36px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+nav a {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Hero */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 48px;
+}
+
+.content h2 {
+    font-size: 56px;
+    width: 480px;
+    height: 134px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.contentText {
+    font-size: 18px;
+    font-weight: 500;
+    width: 480px;
+    height: 54px;
+}
+
+.content form {
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content form :first-child {
+    text-indent: 16px;
+    width: 357px;
+    height: 48px;
+    border: 1px solid black;
+    color: gray;
+}
+
+.content form :last-child {
+    margin-left: 16px;
+    width: 140px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.termsConditions {
+    font-size: 12px;
+    width: 513px;
+    height: 18px;
+    font-weight: 500;
+}
+
+.termsConditions a {
+    text-decoration: underline;
+    color: black;
+}
